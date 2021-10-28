@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="MES_BASE.Views.Region_UserManage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="{DynamicResource UserList}" materialDesign:ColorZoneAssist.Mode="Custom" materialDesign:ColorZoneAssist.Foreground="White">
+            <DataGrid IsReadOnly="True" AutoGenerateColumns="False" Background="#004ba0"
+                      CanUserResizeColumns="False" CanUserResizeRows="False" SelectionMode="Single"
+                      CanUserReorderColumns="False" AlternationCount="2" RowHeaderWidth="0" CanUserAddRows="False"
+                      ItemsSource="{Binding UserList}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="XXID" Visibility="Collapsed" Binding="{Binding Number}" Width="33"/>
+                    <materialDesign:DataGridTextColumn
+                        Binding="{Binding UserName}"
+                        Header="{DynamicResource UserName}"
+                        Width="150" 
+                        >
+                    </materialDesign:DataGridTextColumn>
+                    <materialDesign:DataGridTextColumn
+                        Binding="{Binding Password}"
+                        Header="{DynamicResource Password}"
+                        Width="150"
+                        >
+                    </materialDesign:DataGridTextColumn>
+                    <materialDesign:DataGridTextColumn
+                        Binding="{Binding Access}"
+                        Header="{DynamicResource UserAccess}"
+                        Width="*"
+                        >
+                    </materialDesign:DataGridTextColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+    </Grid>
+</UserControl>

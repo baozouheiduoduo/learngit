@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- MainWindow-->
+    <sys:String x:Key="Title">MES Production Management System</sys:String>
+    <sys:String x:Key="UserManagement">UserManagement</sys:String>
+    <sys:String x:Key="UserLogin">UserLogin</sys:String>
+    <sys:String x:Key="UserManage">UserManage</sys:String>
+    <sys:String x:Key="OperatoreRegister">OperatoreRegister</sys:String>
+    <sys:String x:Key="UserLogOff">UserLogOff</sys:String>
+    <sys:String x:Key="SystemSetting">SystemSetting</sys:String>
+    <sys:String x:Key="DatabaseSetting">DatabaseSetting</sys:String>
+    <sys:String x:Key="TypeSetting">TypeSetting</sys:String>
+    <sys:String x:Key="EN">EN</sys:String>
+    <sys:String x:Key="CN">CN</sys:String>
+    <sys:String x:Key="MES_Switch">MES Switch</sys:String>
+    <sys:String x:Key="AlarmDefinition">AlarmDefinition</sys:String>
+    <sys:String x:Key="ProductionManagement">ProductionManage</sys:String>
+    <sys:String x:Key="ProductionPlan">ProductionPlan</sys:String>
+    <sys:String x:Key="HistoryPlan">HistoryPlan</sys:String>
+    <sys:String x:Key="StationOperator">StationOperator</sys:String>
+    <sys:String x:Key="ProductionMonitor">ProductionMonitor</sys:String>
+    <sys:String x:Key="StationState">StationState</sys:String>
+    <sys:String x:Key="QuantityState">QuantityState</sys:String>
+    <sys:String x:Key="DataManagement">DataManagement</sys:String>
+    <sys:String x:Key="DataSearch">DataSearch</sys:String>
+    <sys:String x:Key="CycleTime">CycleTime</sys:String>
+    <sys:String x:Key="ReworkMonitor">ReworkMonitor</sys:String>
+    <sys:String x:Key="AlarmMonitor">AlarmMonitor</sys:String>
+    <sys:String x:Key="User">User(U)</sys:String>
+    <sys:String x:Key="LanguageChange">LanguageChange</sys:String>
+    <sys:String x:Key="FunctionArea">FunctionArea</sys:String>
+    <!--Region DataTable -->
+    <sys:String x:Key="Refresh">Refresh</sys:String>
+    <sys:String x:Key="Insert">Insert</sys:String>
+    <sys:String x:Key="Add">Add</sys:String>
+    <sys:String x:Key="T_Id">Id</sys:String>
+    <sys:String x:Key="T_ProductCode">ProductCode</sys:String>
+    <sys:String x:Key="T_TestResult">TestResult</sys:String>
+    <sys:String x:Key="T_GetTime">GetTime</sys:String>
+    <sys:String x:Key="T_MaxCurrent">MaxCurrent</sys:String>
+    <sys:String x:Key="T_OkTimes">OKTimes</sys:String>
+    <sys:String x:Key="T_NgTimes">NGTimes</sys:String>
+    <!--Region UserManager -->
+    <sys:String x:Key="UserName">UserName: </sys:String>
+    <sys:String x:Key="Password">Password: </sys:String>
+    <sys:String x:Key="UserAccess">Access: </sys:String>
+    <sys:String x:Key="ConfirmPassword">ConfirmPassword: </sys:String>
+    <sys:String x:Key="Details">Details</sys:String>
+    <sys:String x:Key="UserList">UserList</sys:String>
+    <sys:String x:Key="Delete">Delete</sys:String>
+    <sys:String x:Key="Submit">Submit</sys:String>
+    <sys:String x:Key="PLC_Setting">PLC Setting</sys:String>
+    <sys:String x:Key="IP_Address">IP Address</sys:String>
+    <sys:String x:Key="Rack">Rack:</sys:String>
+    <sys:String x:Key="Slot">Slot:</sys:String>
+    <sys:String x:Key="DB_Block">DB Block:</sys:String>
+    <sys:String x:Key="Connect">Connect</sys:String>
+    <sys:String x:Key="Disconnect">Disconnect</sys:String>
+</ResourceDictionary>

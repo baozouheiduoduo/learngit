@@ -1,0 +1,187 @@
+﻿<UserControl x:Class="Prism_MaterialDesignIntegrated_APP.Views.Region_Dashboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"  
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="1.1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="10 0" VerticalAlignment="Center">
+            <TextBlock Style="{StaticResource MaterialDesignHeadline2TextBlock}" Text="Welcome to XXXXXXX!"/>
+        </StackPanel>
+        <!-- the transitioner will manage your transitions. notice how SelectedIndex is set to zero: the first slide (instead of the default of -1) -->
+        <materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True" Grid.Row="1">
+            <materialDesign:Transitioner.InputBindings>
+                <KeyBinding  Key="Left" Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}" />
+                <KeyBinding  Key="Right" Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" />
+            </materialDesign:Transitioner.InputBindings>
+            <!-- you can use a slide for each page, let's add a touch of fade for our first page  -->          
+            <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect FadeIn}" Background="#47b4a4">
+                <!--<local:Slide1_Intro xmlns:local="clr-namespace:MaterialDesignDemo.TransitionsDemo" />-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="0.35*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource MaterialDesignHeadline4TextBlock}"  Text="Part 1" Foreground="#ffffff" Margin="10 0"/>
+                    <UniformGrid Rows="1" Grid.Row="1">
+                        <materialDesign:Card Width="150">
+                            <Grid Background="#eee">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Image Source="/Assets/Images/山竹.png"
+                                       Height="100" Width="150" Stretch="Fill" />
+                                <Button Grid.Row="0" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                                        HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="0 0 16 -20" Cursor="Hand">
+                                    <materialDesign:PackIcon Kind="Bike" />
+                                </Button>
+                                <StackPanel Grid.Row="1"  Margin="8 8 8 0">
+                                    <TextBlock FontWeight="Bold">
+                                         Cycling
+                                    </TextBlock>
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Center"
+                                               Text="A great way to keep fit and forget about the constant grind of IT." />
+                                </StackPanel>
+                            </Grid>
+                        </materialDesign:Card>
+                        <materialDesign:Card Width="150" Margin="10 0">
+                            <Grid Background="#eee">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Image Source="/Assets/Images/芒果.png"
+                                       Height="100" Width="150" Stretch="Fill" />
+                                <Button Grid.Row="0" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                                        HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="0 0 16 -20">
+                                    <materialDesign:PackIcon Kind="Bike" />
+                                </Button>
+                                <StackPanel Grid.Row="1"  Margin="8 8 8 0">
+                                    <TextBlock FontWeight="Bold">
+                                         Cycling
+                                    </TextBlock>
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Center"
+                                               Text="A great way to keep fit and forget about the constant grind of IT." />
+                                </StackPanel>
+                            </Grid>
+                        </materialDesign:Card>
+                        <materialDesign:Card Width="150">
+                            <Grid Background="#eee">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Image Source="/Assets/Images/苹果.png"
+                                       Height="100" Width="150" Stretch="Fill" />
+                                <Button Grid.Row="0" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                                        HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="0 0 16 -20">
+                                    <materialDesign:PackIcon Kind="Bike" />
+                                </Button>
+                                <StackPanel Grid.Row="1"  Margin="8 8 8 0">
+                                    <TextBlock FontWeight="Bold">
+                                         Cycling
+                                    </TextBlock>
+                                    <TextBlock TextWrapping="Wrap" VerticalAlignment="Center"
+                                               Text="A great way to keep fit and forget about the constant grind of IT." />
+                                </StackPanel>
+                            </Grid>
+                        </materialDesign:Card>
+                    </UniformGrid>
+                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="0 0 0 8" Grid.Row="2">
+                        <Button Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryLightButton}"
+                            ToolTip="MaterialDesignFloatingActionMiniSecondaryLightButton"
+                            Command="{x:Static materialDesign:Transitioner.MoveLastCommand}" Cursor="Hand">
+                            <materialDesign:PackIcon Kind="ArrowLeftBox"/>
+                        </Button>
+                        <Button Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
+                            ToolTip="MaterialDesignFloatingActionMiniSecondaryDarkButton"
+                            Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" Margin="10 0">
+                        <materialDesign:PackIcon Kind="ArrowRightBox"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:TransitionerSlide>
+            <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect FadeIn}" Background="#47b4a4">
+                <!--<local:Slide1_Intro xmlns:local="clr-namespace:MaterialDesignDemo.TransitionsDemo" />-->
+                
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.3*"/>
+                            <RowDefinition/>
+                            <RowDefinition Height="0.35*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Style="{StaticResource MaterialDesignHeadline4TextBlock}"  Text="Part 2" Foreground="#ffffff" Margin="10 0"/>
+                        <StackPanel Grid.Row="1" VerticalAlignment="Top" Margin="10 0">
+                            <TextBlock Style="{StaticResource MaterialDesignBody2TextBlock}" 
+                                        Text="Material Design是一个很好用的WPF样式库和控件集，对于稍微有点WPF基础的开发者非常友好。简单好用是我的第一感：直接使用NuGet就可以获取到资源包，通过其官方的DemoApp(MaterialDesignDemo)很容易使用控件和样式，上手贼快。 "
+                                        TextWrapping="Wrap" Foreground="White"/>
+                        <TextBlock/>
+                        <TextBlock Style="{StaticResource MaterialDesignBody2TextBlock}" 
+                                       Text="对于喜欢钻研的同学来说，他具备完善的资料：GitHub源码和实例，也可以使用DemoApp中的对应控件的''和{}跳转到对应控件的源码，通过学习研究创作出更多的好看、好用的样式和控件."
+                                       TextWrapping="Wrap" Foreground="White"/>
+                    </StackPanel>
+                        
+                        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="0 0 0 8" Grid.Row="2">
+                            <Button Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryLightButton}"
+                            ToolTip="MaterialDesignFloatingActionMiniSecondaryLightButton"
+                            Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}" Cursor="Hand">
+                                <materialDesign:PackIcon Kind="ArrowLeftBox"/>
+                            </Button>
+                        <Button Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
+                            ToolTip="MaterialDesignFloatingActionMiniSecondaryDarkButton"
+                            Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" Margin="10 0">
+                            <materialDesign:PackIcon Kind="ArrowRightBox"/>
+                            </Button>
+                    </StackPanel>
+                    </Grid>
+                    
+                    
+                
+
+            </materialDesign:TransitionerSlide>
+            <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect FadeIn}" Background="#47b4a4">
+                <!--<local:Slide1_Intro xmlns:local="clr-namespace:MaterialDesignDemo.TransitionsDemo" />-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="0.35*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource MaterialDesignHeadline4TextBlock}"  Text="Part 3" Foreground="#ffffff" Grid.Row="0" Margin="10 0"/>
+                    <StackPanel Grid.Row="1" Margin="10 0">
+                        <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" 
+                               Text="Open Source" Foreground="White"
+                               TextWrapping="Wrap"/>
+                        <TextBlock Style="{StaticResource MaterialDesignBody2TextBlock}" 
+                               Text="最开始接触WPF是2017年11月份，相比当时自己也不大熟悉Winform，觉得WPF做的效果很好。但由于一些原因，公司也没有采用WPF进行项目开发。后来一直都是自己看看MSDN、《WPF编程宝典》、bilibili以及万能的百度等，自己也学到了很多。后来在2018年1月份，自己主张使用WPF开发了一个物联网设备监控系统，虽然遇到很多问题，但是最后的效果我觉得能甩Winform很远...自此，开始了漫长的WPF学习之旅。"
+                               TextWrapping="Wrap" Foreground="White"/>
+                        <TextBlock></TextBlock>
+                        <TextBlock Style="{StaticResource MaterialDesignBody2TextBlock}" 
+                               Text="最开始应该是今年年初在Bilibili上的一次视频学习中，看到了Material Design，当时没多大在意。就在昨天，我在给新项目找一些框架资源时。发现很多人都对这个免费开源的UI组件赞不绝口，于是就去GitHub下了APPDemo和源码，当时的效果就把我惊艳到了。这个必须学..."
+                               TextWrapping="Wrap" Foreground="White"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="0 0 0 8" Grid.Row="2">
+                        <Button Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryLightButton}"
+                            ToolTip="MaterialDesignFloatingActionMiniSecondaryLightButton"
+                            Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}" Cursor="Hand">
+                            <materialDesign:PackIcon Kind="ArrowLeftBox"/>
+                        </Button>
+                        <Button Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
+                            ToolTip="MaterialDesignFloatingActionMiniSecondaryDarkButton"
+                            Command="{x:Static materialDesign:Transitioner.MoveFirstCommand}"
+                                Margin="10 0">
+                            <materialDesign:PackIcon Kind="ArrowRightBox"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+
+            </materialDesign:TransitionerSlide>
+        </materialDesign:Transitioner>
+    </Grid>
+</UserControl>

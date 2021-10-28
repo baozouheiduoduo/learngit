@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Prism_MaterialDesignIntegrated_APP</AssemblyName>
+    <StartupObject>Prism_MaterialDesignIntegrated_APP.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\Face1.png" />
+    <None Remove="Assets\Images\Face10.png" />
+    <None Remove="Assets\Images\Face2.png" />
+    <None Remove="Assets\Images\Face3.png" />
+    <None Remove="Assets\Images\Face4.png" />
+    <None Remove="Assets\Images\Face5.png" />
+    <None Remove="Assets\Images\Face6.png" />
+    <None Remove="Assets\Images\Face7.png" />
+    <None Remove="Assets\Images\Face8.png" />
+    <None Remove="Assets\Images\Face9.png" />
+    <None Remove="Assets\Images\Picture1.png" />
+    <None Remove="Assets\Images\Picture2.png" />
+    <None Remove="Assets\Images\人物对话-坐.png" />
+    <None Remove="Assets\Images\山竹.png" />
+    <None Remove="Assets\Images\绿色星空.png" />
+    <None Remove="Assets\Images\联系人.png" />
+    <None Remove="Assets\Images\芒果.png" />
+    <None Remove="Assets\Images\苹果.png" />
+    <None Remove="Assets\Images\蓝绿色星空.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MaterialDesignColors" Version="2.0.3" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
+    <PackageReference Include="ShowMeTheXAML" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Images\Face1.png" />
+    <Resource Include="Assets\Images\Face10.png" />
+    <Resource Include="Assets\Images\Face2.png" />
+    <Resource Include="Assets\Images\Face3.png" />
+    <Resource Include="Assets\Images\Face4.png" />
+    <Resource Include="Assets\Images\Face5.png" />
+    <Resource Include="Assets\Images\Face6.png" />
+    <Resource Include="Assets\Images\Face7.png" />
+    <Resource Include="Assets\Images\Face8.png" />
+    <Resource Include="Assets\Images\Face9.png" />
+    <Resource Include="Assets\Images\Picture1.png" />
+    <Resource Include="Assets\Images\Picture2.png" />
+    <Resource Include="Assets\Images\人物对话-坐.png" />
+    <Resource Include="Assets\Images\山竹.png" />
+    <Resource Include="Assets\Images\绿色星空.png" />
+    <Resource Include="Assets\Images\联系人.png" />
+    <Resource Include="Assets\Images\芒果.png" />
+    <Resource Include="Assets\Images\苹果.png" />
+    <Resource Include="Assets\Images\蓝绿色星空.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\" />
+  </ItemGroup>
+</Project>

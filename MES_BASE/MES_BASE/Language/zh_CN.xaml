@@ -1,0 +1,71 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Menu-->
+    <sys:String x:Key="Title">产线MES管理系统</sys:String>
+    <sys:String x:Key="UserManagement">用户管理</sys:String>
+    <sys:String x:Key="UserLogin">用户登录</sys:String>
+    <sys:String x:Key="UserManage">用户管理</sys:String>
+    <sys:String x:Key="OperatoreRegister">操作员录入</sys:String>
+    <sys:String x:Key="UserLogOff">用户注销</sys:String>
+    <sys:String x:Key="SystemSetting">系统设置</sys:String>
+    <sys:String x:Key="DatabaseSetting">数据库设置</sys:String>
+    <sys:String x:Key="TypeSetting">型号设置</sys:String>
+    <sys:String x:Key="EN">英文</sys:String>
+    <sys:String x:Key="CN">中文</sys:String>
+    <sys:String x:Key="MES_Switch">MES开关</sys:String>
+    <sys:String x:Key="AlarmDefinition">报警定义</sys:String>
+    <sys:String x:Key="ProductionManagement">生产管理</sys:String>
+    <sys:String x:Key="ProductionPlan">生产计划排程</sys:String>
+    <sys:String x:Key="HistoryPlan">历史计划管理</sys:String>
+    <sys:String x:Key="StationOperator">工位员工设置</sys:String>
+    <sys:String x:Key="ProductionMonitor">生产监控</sys:String>
+    <sys:String x:Key="StationState">站状态</sys:String>
+    <sys:String x:Key="QuantityState">产品产出质量</sys:String>
+    <sys:String x:Key="DataManagement">数据管理</sys:String>
+    <sys:String x:Key="DataSearch">数据查询</sys:String>
+    <sys:String x:Key="CycleTime">节拍分析</sys:String>
+    <sys:String x:Key="ReworkMonitor">返工分析</sys:String>
+    <sys:String x:Key="AlarmMonitor">报警分析</sys:String>
+    <sys:String x:Key="User">用户(U)</sys:String>
+    <sys:String x:Key="LanguageChange">语言切换</sys:String>
+    <sys:String x:Key="FunctionArea">功能区域</sys:String>
+    <!--Dialog Login-->
+    <sys:String x:Key="GroupName">用户登录</sys:String>
+    <sys:String x:Key="User_Name">请输入用户名称...</sys:String>
+    <sys:String x:Key="User_Access">用户权限显示</sys:String>
+    <sys:String x:Key="User_Password">请输入输入密码...</sys:String>
+    <sys:String x:Key="login">登录</sys:String>
+    <sys:String x:Key="exit">退出</sys:String>
+    <sys:String x:Key="Message">提示：</sys:String>
+    <!--Region UserManage-->
+    <sys:String x:Key="UserList">用户列表</sys:String>
+    <sys:String x:Key="UserName">用户名:</sys:String>
+    <sys:String x:Key="Password">密码:</sys:String>
+    <sys:String x:Key="UserAccess">权限:</sys:String>
+    <!--Region Datatable -->
+    <sys:String x:Key="Refresh">刷新</sys:String>
+    <sys:String x:Key="Insert">插入</sys:String>
+    <sys:String x:Key="Add">添加</sys:String>
+    <sys:String x:Key="T_Id">编号</sys:String>
+    <sys:String x:Key="T_ProductCode">产品特征码</sys:String>
+    <sys:String x:Key="T_TestResult">测试结果</sys:String>
+    <sys:String x:Key="T_GetTime">录入时间</sys:String>
+    <sys:String x:Key="T_MaxCurrent">最大电流</sys:String>
+    <sys:String x:Key="T_OkTimes">合格次数</sys:String>
+    <sys:String x:Key="T_NgTimes">不合格次数</sys:String>
+    <!--Region UserManager -->
+    
+    <sys:String x:Key="ConfirmPassword">密码确认:</sys:String>
+    <sys:String x:Key="Details">详细</sys:String>
+    
+    <sys:String x:Key="Delete">删除</sys:String>
+    <sys:String x:Key="Submit">提交</sys:String>
+    <sys:String x:Key="PLC_Setting">PLC 设置</sys:String>
+    <sys:String x:Key="IP_Address">IP 地址</sys:String>
+    <sys:String x:Key="Rack">机架号:</sys:String>
+    <sys:String x:Key="Slot">插槽:</sys:String>
+    <sys:String x:Key="DB_Block">数据块:</sys:String>
+    <sys:String x:Key="Connect">连接</sys:String>
+    <sys:String x:Key="Disconnect">断开</sys:String>
+</ResourceDictionary>

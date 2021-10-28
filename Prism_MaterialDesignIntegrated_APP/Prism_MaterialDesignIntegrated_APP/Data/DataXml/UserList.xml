@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UserList>
+  <User>
+    <Name>Admin</Name>
+    <Password>Admin</Password>
+    <Access>Admin</Access>
+  </User>
+  <User>
+    <Name>张三</Name>
+    <Password>zhangsan</Password>
+    <Access>User</Access>
+  </User>
+  <User>
+    <Name>李四</Name>
+    <Password>lisi</Password>
+    <Access>User</Access>
+  </User>
+  <User>
+    <Name>王五</Name>
+    <Password>wangwu</Password>
+    <Access>User</Access>
+  </User>
+  <User>
+    <Name>赵六</Name>
+    <Password>zhaoliu</Password>
+    <Access>User</Access>
+  </User>
+</UserList>

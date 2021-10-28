@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\暴走黑多多\\Desktop\\MES_BASE\\MES_BASE\\MES_BASE.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\暴走黑多多\\Desktop\\MES_BASE\\MES_BASE\\MES_BASE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\暴走黑多多\\Desktop\\MES_BASE\\MES_BASE\\MES_BASE.csproj",
+        "projectName": "MES_BASE",
+        "projectPath": "C:\\Users\\暴走黑多多\\Desktop\\MES_BASE\\MES_BASE\\MES_BASE.csproj",
+        "packagesPath": "C:\\Users\\暴走黑多多\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\暴走黑多多\\Desktop\\MES_BASE\\MES_BASE\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\暴走黑多多\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "Prism.DryIoc": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            },
+            "S7netplus": {
+              "target": "Package",
+              "version": "[0.13.0, )"
+            },
+            "ShowMeTheXAML": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "System.Windows.Interactivity.WPF": {
+              "target": "Package",
+              "version": "[2.0.20525, )"
+            },
+            "Umbraco.ModelsBuilder": {
+              "target": "Package",
+              "version": "[8.1.6, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
